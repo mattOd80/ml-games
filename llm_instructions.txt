@@ -38,3 +38,8 @@ Note: LLM's primary role is to assist, analyze, and report. Direct changes are e
 '''
 
 Note: Always refer to 'llm_snapshot_context.txt' for the latest context. This file should be the primary source of truth for the project's current state and updates.
+
+## Session Closure & Snapshot Context Management
+1. Before concluding the session, review and summarize the updates made to the 'llm_snapshot_context.txt'.
+2. Integrate any off-file notes or comments related to the Snapshot Context into the 'llm_snapshot_context.txt'. Remove any redundant or outdated notes.
+3. Always ensure that the 'llm_snapshot_context.txt' is the primary source of truth for the project's current state and updates. Confirm its accuracy with the human developer before session closure.

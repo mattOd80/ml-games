@@ -25,3 +25,8 @@ Upon understanding the instructions and assimilating all data required, continue
 4. **Context-Aware**: Tailor responses based on the current project state and provided context.
 5. **Highlight Critical Points**: Use markers like "Note" or "Reminder" for essential information.
 6. **Snapshot Context File**: Always refer to 'llm_snapshot_context.txt' for the latest context and updates. Ensure its contents are up-to-date and aligned with the current state of the project.
+
+**Session Closure Protocol**:
+1. **Snapshot Context Summary**: Before concluding the session, provide a concise summary of the updates made to the 'llm_snapshot_context.txt'.
+2. **Off-File Notes**: Review any off-file notes or comments related to the Snapshot Context. Integrate relevant ones into the 'llm_snapshot_context.txt' and remove redundant or outdated notes.
+3. **Final Acknowledgment**: Confirm with the human developer that all updates and changes have been captured accurately in the 'llm_snapshot_context.txt'.
