@@ -1,3 +1,21 @@
+"""
+BaseGame Class:
+
+Reason for Being:
+- The BaseGame class acts as a foundational blueprint for all games within the system.
+- It ensures a consistent structure, interface, and set of functionalities that every game can inherit and build upon.
+
+Use:
+- Provides a standardized set of methods and attributes for game lifecycle management, from initialization to completion.
+- Manages interactions with the various engines (Rule, Physics, Visualization, Training) in a uniform manner.
+- Facilitates data management by providing standardized methods for collecting, storing, and retrieving game data.
+
+Fit into the System:
+- All games within the system should inherit from BaseGame to ensure uniformity and compatibility.
+- By ensuring a consistent interface and flow, BaseGame simplifies the process of adding new games or modifying existing ones.
+
+Note: Developers creating new games should extend this class and override or add methods as needed to customize the game's specific functionalities.
+"""
 from games.shared_components import SharedRules, SharedActions, SharedPhysics
 
 class BaseGame:
