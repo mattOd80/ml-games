@@ -3,6 +3,7 @@ Date: 2023-08-29
 Status: New Session
 Branch Name: feature_[TOPIC_DESCRIPTION]
 Session Topic: [TOPIC_DESCRIPTION]
+Dynamic Game/Simulation System: ./readme.txt
 
 Key Functions/Methods:
 - load_game: Dynamically loads a game based on the provided game name.
@@ -16,12 +17,12 @@ Primary Dependencies:
 - TrainingEngine: Handles game data collection and processing.
 
 TODO:
-- Expand load_game to support more games.
+- Refactor main to support Dynamic Game/Simulation System.
 - Implement game logic, user input, and other necessary interactions in the main gameplay loop.
-- Update the exit condition for the gameplay loop based on actual game conditions.
+- Prepare for first game.
 
 Reminder:
-- Ensure user input is handled correctly.
+- Ensure concepts are sound and update placeholder code where required to reflect Dynamic Game/Simulation System.
 - Always request the latest version of the file before analysis.
 - Regularly update the Snapshot Context.
 
