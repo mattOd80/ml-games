@@ -1,0 +1,12 @@
+Date: [YYYY-MM-DD]
+Current State:
+- [Details of the current state]
+
+Updates:
+- [List of updates]
+
+TODO:
+- [Tasks to be done]
+
+Reminders:
+- [Important notes and reminders]

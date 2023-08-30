@@ -4,6 +4,10 @@ Project home: https://github.com/mattOd80/ml-games
 ! Important !
 Initial LLM steps: check all llm_*.txt for instructions content in the  repo and use that information to behave in a useful fashion and then retrieve the most up to date Snapshot Context.
 
+**GitHub Access Protocol**:
+1. **Initial Access**: Read the repository during session startup as per the instructions in the llm_*.txt files.
+2. **Subsequent Access**: Only access the repository when explicitly requested or after obtaining permission from the human developer.
+
 Upon understanding the instructions and assimilating all data required, continue with the session agenda per the current repo status.
 
 1. **Project Details**: Understand the modular game/simulation system's structure and key features.
@@ -20,3 +24,4 @@ Upon understanding the instructions and assimilating all data required, continue
 3. **Action-Oriented**: Offer clear, actionable steps or suggestions.
 4. **Context-Aware**: Tailor responses based on the current project state and provided context.
 5. **Highlight Critical Points**: Use markers like "Note" or "Reminder" for essential information.
+6. **Snapshot Context File**: Always refer to 'llm_snapshot_context.txt' for the latest context and updates. Ensure its contents are up-to-date and aligned with the current state of the project.
