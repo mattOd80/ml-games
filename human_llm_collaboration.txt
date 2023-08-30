@@ -22,3 +22,42 @@ While the `llm_*.txt` files provide comprehensive instructions for the LLM, new 
 Collaborating with the LLM can enhance the development process, offering insights, suggestions, and analysis. This guide aims to make the collaboration smoother and more intuitive for developers. For detailed instructions, always refer to the `llm_*.txt` files.
 
 Happy Collaborating!
+
+
+
+Project: Dynamic Game/Simulation System
+
+Objective: Framework for dynamic execution, visualization, and data collection of games/simulations. Emphasis on modularity and extensibility.
+
+Key Components:
+- Dynamic Loader: Load & execute various game/simulation modules on-the-fly.
+- Engines:
+  - Rule: Manage game-specific rules.
+  - Physics: Simulate physical interactions.
+  - Visualization: Display (console to 3D visuals).
+  - Data Storage: Manage gameplay data.
+  - Training: Interface for CNN training on gameplay data.
+
+Engines Directory ('/engines/'):
+    rule_engine.py: [RuleEngine Class] - Evaluates game state based on rules.
+    physics_engine.py: [PhysicsEngine Class] - Physical simulation.
+    visualization_engine.py: [VisualizationEngine Class] - Visual representation.
+    training_engine.py: [TrainingEngine Class] - Data collection and preprocessing for CNN.
+
+Shared Utilities ('/shared/'):
+    rules.py: Common rule structures for games.
+    moves.py: Definitions of common game moves.
+
+Games Directory ('/games/'):
+    base_game.py: Blueprint for game structures, methods for gameplay loop, data collection, and game termination.
+
+Usage:
+  human gameplay with 2D visualization: 
+    python main.py --mode=human --visualization=2D
+  automated gameplay, data collection:
+    python main.py --mode=automated --visualization=none --collect_data=true
+  specific game load:
+    python main.py --game=GameOfLife
+
+Documentation Strategy:
+- End of work session: Current Context (detailed state-of-affairs).
