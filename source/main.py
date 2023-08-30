@@ -4,6 +4,8 @@ from engines.rule_engine import RuleEngine
 from engines.physics_engine import PhysicsEngine
 from engines.visualization_engine import VisualizationEngine
 from engines.training_engine import TrainingEngine
+import argparse
+import importlib
 
 class Main:
 
@@ -16,10 +18,12 @@ class Main:
         self.training_engine = TrainingEngine()
 
     def load_game(self, game_name: str):
-        # Dynamically load a game based on the game_name provided.
-        # For now, we'll set it to the BaseGame. This will be expanded upon later.
-        self.game = BaseGame()
-    
+        try:
+            game_module = importlib.import_module(f"games.{game_name}")
+            self.game = getattr(game_module, game_name.capitalize())()
+        except (ModuleNotFoundError, AttributeError):
+            raise ValueError(f"Unknown game: {game_name}")
+
     def main(self):
         # Core gameplay loop
         while True:
@@ -42,6 +46,19 @@ class Main:
             break
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Load a specific game.")
+    parser.add_argument("--game", type=str, help="Name of the game to load.")
+    args = parser.parse_args()
+
     main_app = Main()
-    main_app.load_game("sample_game_name")  # This will be updated with real game names.
-    main_app.main()
+
+    if args.game:
+        game_to_load = args.game
+    else:
+        game_to_load = input("Enter the name of the game to load: ")
+
+    try:
+        main_app.load_game(game_to_load)
+        main_app.main()
+    except Exception as e:
+        print(f"Error: {e}")
