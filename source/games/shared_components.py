@@ -1,3 +1,31 @@
+"""
+SharedComponents:
+
+Purpose:
+- The SharedComponents module provides a collection of shared rules, actions, and physics methods that can be utilized across multiple games.
+- It acts as a central repository for common functionalities, ensuring consistency, reusability, and maintainability across the system.
+
+Key Features:
+- **Shared Rules**: Define common game rules that can be applied across different games. This might include turn-based mechanics, win conditions, or boundary checks.
+- **Shared Actions**: Standardize actions that players or the system can take, such as move, jump, or interact.
+- **Shared Physics**: Offer basic physics simulations like gravity, collision, or momentum that can be reused in various game scenarios.
+
+Future State and Integration with CNN:
+- The design of SharedComponents is intended to be modular and extensible, allowing for future integration with Convolutional Neural Networks (CNN).
+- In the envisioned future state, a trained CNN can utilize these shared components to influence many aspects of the game. This includes:
+  - **Decision Making**: Using the shared rules to make informed decisions during gameplay.
+  - **Predictive Analysis**: Anticipating player actions based on shared actions and influencing game outcomes.
+  - **Dynamic Interactions**: Modifying or enhancing shared physics based on game state and player behavior.
+- This integration aims to create a more adaptive and intelligent game environment, where the game can learn, adapt, and evolve based on player interactions and other inputs.
+
+Implementation Status:
+- While the current implementation contains placeholders, it's crucial to develop these shared components with the future integration of CNN in mind.
+- Developers should ensure that the design remains modular, extensible, and compatible with machine learning models.
+
+Note:
+- As the system evolves, the SharedComponents module will play a pivotal role in bridging traditional game mechanics with advanced machine learning capabilities. It's essential to prioritize its development and ensure its alignment with the broader system goals.
+"""
+
 class SharedRules:
     @staticmethod
     def check_for_line(state_matrix, length, player_symbol):
