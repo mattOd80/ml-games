@@ -1,11 +1,13 @@
 # Import necessary modules and dependencies
-from games.base_game import BaseGame
 from engines.rule_engine import RuleEngine
 from engines.physics_engine import PhysicsEngine
 from engines.visualization_engine import VisualizationEngine
 from engines.training_engine import TrainingEngine
 import argparse
 import importlib
+
+from games.debug_game import DebugGame
+
 
 class Main:
 
@@ -19,10 +21,14 @@ class Main:
 
     def load_game(self, game_name: str):
         try:
-            game_module = importlib.import_module(f"games.{game_name}")
-            self.game = getattr(game_module, game_name.capitalize())()
-        except (ModuleNotFoundError, AttributeError):
-            raise ValueError(f"Unknown game: {game_name}")
+            module_name = ''.join(['_' + i.lower() if i.isupper() else i for i in game_name]).lstrip('_')
+            print(f"Trying to load module: games.{module_name}")  # Debug print
+            game_module = importlib.import_module(f"games.{module_name}")
+            print(f"Trying to instantiate class: {game_name}")  # Debug print
+            self.game = getattr(game_module, game_name)()
+        except (ModuleNotFoundError, AttributeError) as e:
+            print(f"Debug Error: {e}")  # Print the actual error for debugging
+            raise ValueError(f"Unknown game: {game_name}.")
 
     def main(self):
         # Core gameplay loop
@@ -31,7 +37,7 @@ class Main:
             self.rule_engine.evaluate(self.game.game_state)
 
             # 2. Simulate physics
-            self.physics_engine.simulate(self.game.game_state)
+            self.physics_engine.apply_physics(self.game.game_state)
 
             # 3. Render visuals
             self.visualization_engine.render(self.game.game_state)

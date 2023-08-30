@@ -1,4 +1,4 @@
-from shared_components import SharedRules, SharedActions, SharedPhysics
+from games.shared_components import SharedRules, SharedActions, SharedPhysics
 
 class BaseGame:
     def __init__(self):
