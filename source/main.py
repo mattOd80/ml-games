@@ -1,13 +1,3 @@
-'''
-    Snapshot Context: main.py
-    Date: 2023-08-29
-    Status: In-Progress
-    Key Functions/Methods: load_game, main, get_user_input
-    Primary Dependencies: BaseGame, RuleEngine, PhysicsEngine, VisualizationEngine, TrainingEngine
-    TODO: Refine user input interactions and game control mechanisms.
-    Reminder: Ensure that user input error handling is in place.
-'''
-
 # Import necessary modules and dependencies
 from games.base_game import BaseGame
 from engines.rule_engine import RuleEngine

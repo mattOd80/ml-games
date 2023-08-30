@@ -5,6 +5,7 @@ Status: In-Progress
 Key Functions/Methods:
 - load_game: Dynamically loads a game based on the provided game name.
 - main: Core gameplay loop that orchestrates the game's flow, including rule evaluation, physics simulation, visualization, and data collection/processing.
+- get_user_input (Not yet implemented): Expected to handle user interactions and game control mechanisms.
 
 Primary Dependencies:
 - BaseGame: Represents the base structure of a game.
@@ -14,8 +15,8 @@ Primary Dependencies:
 - TrainingEngine: Collects, processes, and stores game data for training purposes.
 
 TODO:
-- Refine user input interactions and game control mechanisms.
-- Expand the load_game function to support more games beyond the BaseGame.
+- Implement the get_user_input function to refine user input interactions and game control mechanisms.
+- Expand the load_game function to support more games beyond just the BaseGame.
 - Implement game logic, user input, and other necessary interactions within the main function.
 
 Reminder:
