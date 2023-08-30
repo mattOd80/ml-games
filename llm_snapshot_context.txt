@@ -5,25 +5,26 @@ Branch Name: feature_[TOPIC_DESCRIPTION]
 Session Topic: [TOPIC_DESCRIPTION]
 
 Key Functions/Methods:
-- load_game: Loads a game based on game name.
-- main: Core gameplay loop.
+- load_game: Dynamically loads a game based on the provided game name.
+- main: Core gameplay loop that involves evaluating game state, simulating physics, rendering visuals, and collecting data.
 
 Primary Dependencies:
-- BaseGame: Game structure.
-- RuleEngine: Game rules and logic.
-- PhysicsEngine: Physical interactions.
-- VisualizationEngine: Game visualization.
-- TrainingEngine: Game data handling.
+- BaseGame: Blueprint for game structures.
+- RuleEngine: Evaluates game state based on rules.
+- PhysicsEngine: Simulates physical interactions.
+- VisualizationEngine: Provides visual representation of the game.
+- TrainingEngine: Handles game data collection and processing.
 
 TODO:
-- Refine user input in main.
-- Expand load_game for more games.
-- Add game logic in main.
+- Expand load_game to support more games.
+- Implement game logic, user input, and other necessary interactions in the main gameplay loop.
+- Update the exit condition for the gameplay loop based on actual game conditions.
 
 Reminder:
-- Handle user input errors.
-- Request latest file version before analysis.
-- Update Snapshot Context regularly.
+- Ensure user input is handled correctly.
+- Always request the latest version of the file before analysis.
+- Regularly update the Snapshot Context.
 
 Note:
-- LLM assists, analyzes, and reports. Developer makes changes.
+- LLM assists, analyzes, reports, and makes changes.
+- Developer assists, analyzes, reports, and makes changes.
