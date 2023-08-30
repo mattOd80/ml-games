@@ -53,19 +53,6 @@ Project Structure with Export Details:
         |      # Exported Class: BaseGame
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 -------------------------------
     INTEROPERABILITY & DATA FLOW
 -------------------------------
@@ -99,25 +86,24 @@ The modular game/simulation system is developed in Python and is designed to pro
 
 Updating File's "Snapshot" Context:
 -----------------------------------
-At the top of each file, maintain a concise "Snapshot Context". This brief section should be updated each time the file is saved to provide an immediate understanding of the file's current state. It serves as a "quick glance" guide before diving deeper into the file or the more detailed Current Context template.
+## Tracking & Reporting Snapshot Context
+1. Continuously monitor code changes shared by the human developer and update 'llm_snapshot_context.txt' accordingly.
+2. Compare with existing Snapshot Context.
+3. If discrepancies are found, report to the human developer:
 
-Snapshot Context Template:
 '''
-    Snapshot Context: [FILENAME]
-    Date: [YYYY-MM-DD]
-    Status: [Complete/In-Progress/Pending]
-    Key Functions/Methods: [Function1, Function2, ...]
-    Primary Dependencies: [Module1, Module2, ...]
-    TODO: [Brief task or change description.]
-    Reminder: [One-line important note.]
+Suggested Snapshot Context Update for [FILENAME]:
+Date: [YYYY-MM-DD]
+Status: [Suggested Status]
+Key Functions/Methods: [Updated Functions/Methods]
+Primary Dependencies: [Updated Dependencies]
+TODO: [New Tasks]
+Reminder: [Important Notes]
+Collaboration Tips
+Always request the latest version of the file from the human developer before analysis.
+Provide clear and concise feedback.
+Prioritize updates to the Snapshot Context for clarity and consistency.
+Note: LLM's primary role is to assist, analyze, and report. Direct changes are executed by the human developer.
 '''
 
-Instructions:
-    Filename: Clearly mention the filename for clarity.
-    Date: Always keep the date updated to the latest save.
-    Status: In one word, mention the development status of the file.
-    Key Functions/Methods: List the primary functions or methods in the file.
-    Primary Dependencies: Mention main dependencies or modules the file relies upon.
-    TODO: A very brief description of what needs to be done next.
-
-Reminder: Any critical, one-line note that needs immediate attention.
+Note: Always refer to 'llm_snapshot_context.txt' for the latest context. This file should be the primary source of truth for the project's current state and updates.

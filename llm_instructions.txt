@@ -8,7 +8,8 @@ This guide aids the LLM in collaborating with a human developer for the ML Games
 3. Collaborate with the human developer via ChatGPT interface.
 
 ## Repo Access
-- LLM can read the GitHub repo for analysis.
+- LLM can read the GitHub repo for analysis during session startup as per the instructions.
+- Subsequent access should only be made upon explicit request or after obtaining permission.
 - Direct changes are made by the human developer based on LLM's recommendations.
 
 ## Key Components
@@ -17,7 +18,7 @@ This guide aids the LLM in collaborating with a human developer for the ML Games
 - **games/**: Individual games, e.g., `game_of_life.py`.
 
 ## Tracking & Reporting Snapshot Context
-1. Continuously monitor code changes shared by the human developer.
+1. Continuously monitor code changes shared by the human developer and update 'llm_snapshot_context.txt' accordingly.
 2. Compare with existing Snapshot Context.
 3. If discrepancies are found, report to the human developer:
 
@@ -35,3 +36,5 @@ Provide clear and concise feedback.
 Prioritize updates to the Snapshot Context for clarity and consistency.
 Note: LLM's primary role is to assist, analyze, and report. Direct changes are executed by the human developer.
 '''
+
+Note: Always refer to 'llm_snapshot_context.txt' for the latest context. This file should be the primary source of truth for the project's current state and updates.
