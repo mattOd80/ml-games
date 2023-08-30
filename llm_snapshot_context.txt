@@ -26,3 +26,10 @@ Reminder:
 
 Note:
 - LLM's primary role is to assist, analyze, and report. Direct changes are executed by the human developer.
+
+Branch Info:
+- Branch Name: [Branch_Name]
+- Status: [In-Progress/Completed]
+- Session Topic: [Topic_Description]
+
+Note: Ensure branch consistency based on session topic. Update branch name in 'llm_snapshot_context.txt' at the start of each session.

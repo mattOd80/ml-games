@@ -107,3 +107,8 @@ Note: LLM's primary role is to assist, analyze, and report. Direct changes are e
 '''
 
 Note: Always refer to 'llm_snapshot_context.txt' for the latest context. This file should be the primary source of truth for the project's current state and updates.
+
+Branching Strategy:
+- At session start, LLM checks 'llm_snapshot_context.txt' for branch status.
+- For ongoing sessions, LLM continues with the specified branch.
+- For new sessions, LLM suggests a branch name based on the session topic.

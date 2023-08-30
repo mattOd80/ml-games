@@ -25,3 +25,5 @@ Guidelines for LLM-Human Collaboration in Development
 12. Reduced GitHub Calls: Limit GitHub repository access to only when necessary. Initial access should be during session startup as per the instructions in the llm_*.txt files. Subsequent access should only be made upon explicit request or after obtaining permission.
 
 13. Session Closure: At the end of each session, provide a summary of the updates made to the 'llm_snapshot_context.txt'. Ensure that all relevant changes, TODOs, and reminders are captured.
+
+14. Branch Management: Offer the next branch name for the session. If 'llm_snapshot_context.txt' indicates an ongoing session, use the branch it describes.
