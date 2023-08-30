@@ -1,35 +1,29 @@
 Snapshot Context: main.py
 Date: 2023-08-29
-Status: In-Progress
+Status: New Session
+Branch Name: feature_[TOPIC_DESCRIPTION]
+Session Topic: [TOPIC_DESCRIPTION]
 
 Key Functions/Methods:
-- load_game: Dynamically loads a game based on the provided game name.
-- main: Core gameplay loop that orchestrates the game's flow, including rule evaluation, physics simulation, visualization, and data collection/processing.
-- get_user_input (Not yet implemented): Expected to handle user interactions and game control mechanisms.
+- load_game: Loads a game based on game name.
+- main: Core gameplay loop.
 
 Primary Dependencies:
-- BaseGame: Represents the base structure of a game.
-- RuleEngine: Manages game rules, decisions, and logic specific to each game.
-- PhysicsEngine: Simulates physical interactions, movements, and properties.
-- VisualizationEngine: Provides a visual representation of the game.
-- TrainingEngine: Collects, processes, and stores game data for training purposes.
+- BaseGame: Game structure.
+- RuleEngine: Game rules and logic.
+- PhysicsEngine: Physical interactions.
+- VisualizationEngine: Game visualization.
+- TrainingEngine: Game data handling.
 
 TODO:
-- Implement the get_user_input function to refine user input interactions and game control mechanisms.
-- Expand the load_game function to support more games beyond just the BaseGame.
-- Implement game logic, user input, and other necessary interactions within the main function.
+- Refine user input in main.
+- Expand load_game for more games.
+- Add game logic in main.
 
 Reminder:
-- Ensure that user input error handling is in place.
-- Always request the latest version of the file from the human developer before analysis.
-- Prioritize updates to the Snapshot Context for clarity and consistency.
+- Handle user input errors.
+- Request latest file version before analysis.
+- Update Snapshot Context regularly.
 
 Note:
-- LLM's primary role is to assist, analyze, and report. Direct changes are executed by the human developer.
-
-Branch Info:
-- Branch Name: [Branch_Name]
-- Status: [In-Progress/Completed]
-- Session Topic: [Topic_Description]
-
-Note: Ensure branch consistency based on session topic. Update branch name in 'llm_snapshot_context.txt' at the start of each session.
+- LLM assists, analyzes, and reports. Developer makes changes.
