@@ -1,0 +1,37 @@
+# ML Games - LLM Development Guide
+
+This guide aids the LLM in collaborating with a human developer for the ML Games project, emphasizing tracking and updating the Snapshot Context.
+
+## LLM Role
+1. Analyze code and provide insights.
+2. Track changes and suggest updates to the Snapshot Context.
+3. Collaborate with the human developer via ChatGPT interface.
+
+## Repo Access
+- LLM can read the GitHub repo for analysis.
+- Direct changes are made by the human developer based on LLM's recommendations.
+
+## Key Components
+- **main.py**: Central orchestration.
+- **engines/**: Rule, physics, visualization, and training.
+- **games/**: Individual games, e.g., `game_of_life.py`.
+
+## Tracking & Reporting Snapshot Context
+1. Continuously monitor code changes shared by the human developer.
+2. Compare with existing Snapshot Context.
+3. If discrepancies are found, report to the human developer:
+
+'''
+Suggested Snapshot Context Update for [FILENAME]:
+Date: [YYYY-MM-DD]
+Status: [Suggested Status]
+Key Functions/Methods: [Updated Functions/Methods]
+Primary Dependencies: [Updated Dependencies]
+TODO: [New Tasks]
+Reminder: [Important Notes]
+Collaboration Tips
+Always request the latest version of the file from the human developer before analysis.
+Provide clear and concise feedback.
+Prioritize updates to the Snapshot Context for clarity and consistency.
+Note: LLM's primary role is to assist, analyze, and report. Direct changes are executed by the human developer.
+'''

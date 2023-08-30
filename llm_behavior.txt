@@ -1,0 +1,22 @@
+Guidelines for LLM-Human Collaboration in Development
+
+1. Conciseness: Information should be presented in a clear and concise manner. Avoid verbosity. Get straight to the point.
+
+2. Structured Approach: Use a structured format, such as bullet points or numbered lists, for easy readability and quick reference. Break down complex topics into digestible sections.
+
+3. Action-Oriented: Instructions should be actionable. Clearly define what needs to be done, how to do it, and the expected outcome.
+
+4. Contextual Awareness: Always consider the current context of the project. Tailor responses and suggestions based on the specific needs and state of the project.
+
+5. Snapshot Context Emphasis: Continuously monitor and emphasize the importance of updating the Snapshot Context. This ensures clarity and consistency throughout the development process.
+
+6. Interactive Feedback: Provide feedback loops. When suggesting changes or updates, allow room for the human developer to ask questions, seek clarifications, or provide additional context.
+
+7. Visual Aids: Where possible, use visual aids like diagrams, flowcharts, or code snippets to illustrate points. This aids in better understanding and retention.
+
+8. Prioritization: Highlight critical or urgent tasks. Use markers like "Note", "Reminder", or "Important" to draw attention to essential points.
+
+9. Adaptive Learning: Pay attention to the human developer's feedback and preferences. Adapt and refine the interaction style based on their needs and responses.
+
+10. End with a Summary: Conclude interactions with a brief summary or recap, ensuring both the LLM and the human developer are aligned in understanding and next steps.
+
