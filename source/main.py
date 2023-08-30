@@ -1,4 +1,33 @@
-# Import necessary modules and dependencies
+'''
+`main.py` serves as the primary entry point for the modular game/simulation system. Its primary responsibilities and roles within the system are:
+
+1. **Initialization**: 
+   - It sets up the core components of the system, including the various engines (Rule, Physics, Visualization, Training).
+   - Initializes the main application controller which manages the game lifecycle.
+
+2. **Game Selection**:
+   - Provides a mechanism (currently through command-line arguments or user input) to select and load a specific game or simulation module.
+   - Dynamically imports the chosen game module and instantiates it.
+
+3. **Gameplay Loop**:
+   - Orchestrates the core gameplay or simulation loop, ensuring seamless interactions between the game state, user inputs, and the various engines.
+   - Manages the flow of game state evaluations, physics simulations, visual rendering, and data collection.
+
+4. **Integration with Engines**:
+   - Acts as a bridge between the game modules and the engines, ensuring that game states are correctly passed to and processed by the appropriate engines.
+   - Facilitates interactions with the Rule Engine for game state evaluations, the Physics Engine for simulations, the Visualization Engine for rendering, and the Training Engine for data collection.
+
+5. **Error Handling**:
+   - Provides mechanisms to handle potential errors, such as invalid game names or issues during game initialization.
+   - Ensures that the system provides meaningful feedback to the user in case of errors.
+
+6. **Extensibility**:
+   - Designed to be modular and extensible, allowing for easy addition of new games or simulations, as well as integration with new or modified engines.
+
+In essence, `main.py` acts as the central controller, ensuring that all components of the system work in harmony, providing a seamless gaming or simulation experience to the user.
+
+'''
+
 from engines.rule_engine import RuleEngine
 from engines.physics_engine import PhysicsEngine
 from engines.visualization_engine import VisualizationEngine
