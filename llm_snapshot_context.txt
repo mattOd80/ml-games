@@ -1,31 +1,30 @@
-Date: 2023-08-29
-Status: New Session
-Branch Name: feature_[TOPIC_DESCRIPTION]
-Session Topic: [TOPIC_DESCRIPTION]
+Snapshot Context - Date: 2023-08-29
 
-Dynamic Game/Simulation System: ./readme.txt
+Session Topic: Create MVP of the game loop
 
-Key Functions/Methods:
-- load_game: Dynamically loads a game based on the provided game name.
-- main: Core gameplay loop that involves evaluating game state, simulating physics, rendering visuals, and collecting data.
+1. **Main.py Overview**:
+   - Main.py acts as the hub for game flow and remains agnostic of the specific games.
+   - Uses dynamic loading to load games based on user input or command-line arguments.
+   - Integrates with various engines: RuleEngine, PhysicsEngine, VisualizationEngine, and TrainingEngine.
 
-Primary Dependencies:
-- BaseGame: Blueprint for game structures.
-- RuleEngine: Evaluates game state based on rules.
-- PhysicsEngine: Simulates physical interactions.
-- VisualizationEngine: Provides visual representation of the game.
-- TrainingEngine: Handles game data collection and processing.
+2. **DebugGame**:
+   - Serves as a sandbox environment for testing and development.
+   - Primary focus is to log the caller and the passed arguments, providing insights into the event flow through the engines.
+   - Successfully integrated with Main.py for dynamic loading.
 
-TODO:
-- Refactor main to support Dynamic Game/Simulation System.
-- Implement game logic, user input, and other necessary interactions in the main gameplay loop.
-- Prepare for first game.
+3. **Engines**:
+   - RuleEngine: Evaluates the game state.
+   - PhysicsEngine: Simulates physics. (Note: Ensure the 'simulate' method is defined and functional)
+   - VisualizationEngine: Renders visuals.
+   - TrainingEngine: Collects and processes game data.
 
-Reminder:
-- Ensure concepts are sound and update placeholder code where required to reflect Dynamic Game/Simulation System.
-- Always request the latest version of the file before analysis.
-- Regularly update the Snapshot Context.
+4. **Issues & Resolutions**:
+   - Encountered an issue with dynamically loading the DebugGame. Resolved by adjusting the module and class naming conventions.
+   - Encountered an error related to the 'simulate' method in PhysicsEngine. Advised to check and define the method if missing.
 
-Note:
-- LLM assists, analyzes, reports, and makes changes.
-- Developer assists, analyzes, reports, and makes changes.
+5. **Next Steps**:
+   - Ensure all engines are functional and integrate seamlessly with DebugGame.
+   - Expand on the DebugGame to include more functionalities and interactions.
+   - Test the entire flow from Main.py to DebugGame and through the engines.
+
+End of Snapshot Context.
