@@ -61,11 +61,4 @@ These rule types will form the foundation for the system's capabilities in v1, w
 | Geographical          | Geographic Boundary Check| Layer Interaction Check    | Real-world Data Validation  |
 | Hypersurface          | Surface Integrity Check  | Mathematical Validation    | Hyperspace Interaction      |
 | Dynamic Network       | Node Evolution Check     | Dynamic Connectivity Check | Network Integrity Validation|
-
-
-
-
-
-
-
 '''

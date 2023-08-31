@@ -16,7 +16,7 @@ Fit into the System:
 
 Note: Developers creating new games should extend this class and override or add methods as needed to customize the game's specific functionalities.
 """
-from shared.shared_components import SharedRules, SharedActions, SharedPhysics
+from games.shared_components import SharedRules, SharedActions, SharedPhysics
 
 class BaseGame:
     def __init__(self):
